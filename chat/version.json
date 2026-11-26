@@ -1,0 +1,13 @@
+{
+  "version": "1.3.2",
+  "date": "2026-11-26",
+  "note": "网聊客户端更新清单",
+  "exe": {
+    "url": "https://fsc11662.github.io/files/online_chatting.exe",
+    "size": 75965470
+  },
+  "apk": {
+    "url": "https://fsc11662.github.io/files/online_chatting.apk",
+    "size": 37334
+  }
+}
