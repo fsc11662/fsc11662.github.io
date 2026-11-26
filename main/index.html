@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>云端存储器 · 下载</title>
-<meta name="description" content="云端存储器客户端下载：Windows 安装版、Android APK。">
+<meta name="description" content="云端存储器客户端下载：Windows 安装版、Android APK，站点直连下载。">
 <meta name="theme-color" content="#0e1116">
 <meta property="og:title" content="云端存储器 · 下载">
-<meta property="og:description" content="Windows 安装版、Android APK。">
+<meta property="og:description" content="Windows 安装版、Android APK，站点直连下载。">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1116'/%3E%3Cpath d='M9 20h14a4 4 0 0 0 .4-8 6 6 0 0 0-11.6-1.6A4.2 4.2 0 0 0 9 20z' fill='%235aa9ff'/%3E%3C/svg%3E">
 <style>
   :root{
@@ -28,12 +28,15 @@
     background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:22px;letter-spacing:.04em}
   h1{font-size:29px;margin:16px 0 4px;font-weight:650;letter-spacing:.02em}
   .sub{color:var(--dim);font-size:14px;margin:0}
+  .vbadge{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:6px 14px;
+    border:1px solid var(--line);border-radius:999px;background:var(--panel);font-size:13px;color:var(--dim)}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(87,209,139,.14)}
   .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:28px 0 12px}
   .card{background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);
-    border-radius:16px;padding:22px 20px;display:flex;flex-direction:column;min-height:222px}
+    border-radius:16px;padding:22px 20px;display:flex;flex-direction:column;min-height:238px}
   .card:hover{border-color:rgba(90,169,255,.35)}
   .tag{font-size:11px;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
-  .card h2{font-size:18px;margin:8px 0 4px;font-weight:600}
+  .card h2{font-size:19px;margin:8px 0 4px;font-weight:600}
   .fname{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;color:var(--dim);word-break:break-all}
   .meta{margin-top:auto;padding-top:14px;font-size:12px;color:var(--faint)}
   .btn{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;height:44px;border-radius:10px;
@@ -41,9 +44,17 @@
   .btn:hover{filter:brightness(1.08)}
   .note{border-left:3px solid var(--accent);padding:12px 16px;background:var(--accent-soft);border-radius:0 10px 10px 0;
     color:var(--text);font-size:14px;margin-top:18px}
+  section{margin-top:40px}
+  h3{font-size:17px;margin:0 0 12px;font-weight:600}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+  ul{margin:0;padding-left:20px}
+  li{margin:6px 0;color:var(--dim)}
+  li b{color:var(--text);font-weight:600}
+  .faq .q{color:var(--text);font-weight:600;margin-top:14px}
+  .faq .a{color:var(--dim);font-size:14px;margin-top:2px}
   footer{margin:46px 0 40px;text-align:center;color:var(--faint);font-size:13px;line-height:1.9}
   .flinks{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}
-  @media (max-width:760px){.cards{grid-template-columns:1fr} header{padding:38px 0 24px} h1{font-size:24px}}
+  @media (max-width:760px){.cards{grid-template-columns:1fr} .card{min-height:0} header{padding:38px 0 24px} h1{font-size:24px}}
 </style>
 </head>
 <body>
@@ -51,7 +62,11 @@
   <header>
     <div class="mark">CS</div>
     <h1>云端存储器</h1>
-    <p class="sub">Windows 与 Android 客户端下载</p>
+    <p class="sub">凭 EMT 提取码跨设备传文件与文本，不需要共享账号密码。</p>
+    <div class="vbadge">
+      <span class="dot"></span>
+      <span>当前版本 1.7.4 · 2026-11-17</span>
+    </div>
   </header>
 
   <div class="cards">
@@ -59,28 +74,41 @@
       <div class="tag">Windows</div>
       <h2>安装版</h2>
       <div class="fname">cloud_storage_setup.exe</div>
-      <div class="meta">自动安装并创建桌面快捷方式</div>
-      <a class="btn" href="https://github.com/fsc11662/cloud-storage-install/releases/latest/download/cloud_storage_setup.exe" download>下载安装版</a>
+      <div class="meta">72.7 MB · 自动安装并创建桌面快捷方式，支持应用内升级</div>
+      <a class="btn" href="../files/cloud_storage_setup.exe" download>下载安装版</a>
     </div>
 
     <div class="card">
       <div class="tag">Android</div>
       <h2>手机版 APK</h2>
       <div class="fname">cloud_storage.apk</div>
-      <div class="meta">支持 Android 7.0 及以上</div>
-      <a class="btn" href="https://github.com/fsc11662/cloud-storage-install/releases/latest/download/cloud_storage.apk" download>下载 APK</a>
+      <div class="meta">76 KB · 支持 Android 7.0 及以上</div>
+      <a class="btn" href="../files/cloud_storage.apk" download>下载 APK</a>
     </div>
   </div>
 
   <p class="note">
-    当前安装包仍由项目发布页提供（<span class="fname">releases/latest/download</span> 永久地址），版本与文件大小以发布页为准。待把安装包放进本站 <span class="fname">/main/files/</span> 后，这里会改成站内直链，不再依赖外部下载。
+    文件直接由本站托管，点击即从本页面下载，不跳转 GitHub Releases。若浏览器下载到一半卡住，可右键「复制链接」，用下载工具（IDM、迅雷、浏览器多线程下载）续传。
   </p>
+
+  <section class="faq">
+    <h3>常见问题</h3>
+    <div class="panel">
+      <div class="q">安装时提示「未知发布者 / 已保护你的电脑」？</div>
+      <div class="a">安装包未做代码签名，Windows SmartScreen 会拦一下。点「更多信息」→「仍要运行」即可；文件由本页直接提供，未被第三方修改。</div>
+
+      <div class="q">安装版和免安装版有什么区别？</div>
+      <div class="a">日常使用请装安装版。免安装版只随版本更新重新生成，供应用内自动更新使用，不单独放出来下载。</div>
+
+      <div class="q">手机安装 APK 被拦截？</div>
+      <div class="a">在系统设置里允许「安装未知来源应用」后重试。若已装旧版，直接覆盖安装即可，本机记录不受影响。</div>
+    </div>
+  </section>
 
   <footer>
     <div class="flinks">
       <a href="../">站点首页</a>
       <a href="https://github.com/fsc11662/cloud-storage-install">GitHub 仓库</a>
-      <a href="https://github.com/fsc11662/cloud-storage-install/releases">版本发布</a>
     </div>
     <div>云端存储器 · 仅供学习与内部交流使用</div>
   </footer>

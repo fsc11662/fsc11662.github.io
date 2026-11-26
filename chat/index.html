@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>网聊 Online Chatting · 下载</title>
-<meta name="description" content="网聊 Online Chatting 官方下载：Windows 安装版、Windows 免安装版、Android APK，站点直连下载。">
+<meta name="description" content="网聊 Online Chatting 官方下载：Windows 安装版、Android APK，站点直连下载。">
 <meta name="theme-color" content="#0e1116">
 <meta property="og:title" content="网聊 Online Chatting · 下载">
-<meta property="og:description" content="Windows 安装版 / 免安装版 / Android APK，站点直连下载。">
+<meta property="og:description" content="Windows 安装版 / Android APK，站点直连下载。">
 <meta property="og:image" content="https://storage.sharestaging.com/online_chatting_logo.png">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1116'/%3E%3Cpath d='M8 10a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3h-5l-4 4v-4h-1a3 3 0 0 1-3-3z' fill='%235aa9ff'/%3E%3C/svg%3E">
 <style>
@@ -37,7 +37,7 @@
     border:1px solid var(--line);border-radius:999px;background:var(--panel);font-size:13px;color:var(--dim)}
   .dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(87,209,139,.14)}
 
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0 10px}
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:26px 0 10px}
   .card{
     background:linear-gradient(180deg,var(--panel-2),var(--panel));
     border:1px solid var(--line);border-radius:16px;padding:22px 20px;
@@ -89,7 +89,7 @@
     <p class="sub">多人群聊、私聊、文件传输与 @ 提醒，多账号一键切换。</p>
     <div class="vbadge">
       <span class="dot"></span>
-      <span>当前版本 1.3.0 · 2026-11-25</span>
+      <span>当前版本 1.3.1 · 2026-11-26</span>
     </div>
   </header>
 
@@ -100,14 +100,6 @@
       <div class="fname">files/online_chatting_setup.exe</div>
       <div class="meta">72.7 MB · 自动安装、建桌面快捷方式、支持应用内升级</div>
       <a class="btn" href="../files/online_chatting_setup.exe" download>下载安装版</a>
-    </div>
-
-    <div class="card">
-      <div class="tag">Windows</div>
-      <h2>免安装版</h2>
-      <div class="fname">files/online_chatting.exe</div>
-      <div class="meta">72.5 MB · 解压即用，单文件运行，不写系统目录</div>
-      <a class="btn" href="../files/online_chatting.exe" download>下载免安装版</a>
     </div>
 
     <div class="card">
@@ -131,6 +123,7 @@
         <li><b>接口地址更新</b> —— 客户端改用新接口 <span class="fname">/Aicha</span>，旧版本将无法继续使用，请更新到最新版。</li>
         <li><b>多人会话</b> —— 大厅、公开群、私聊；按 8 位 ID 加好友、拉人进群。</li>
         <li><b>文件与 @</b> —— 群内传文件（单文件 1 MB 内），@ 指定成员，消息引用与 5 分钟内撤回。</li>
+        <li><b>引用不留残影</b> —— 被引用的消息一旦撤回，引用块里的原文同时不可见，只显示「引用的消息已撤回」。</li>
       </ul>
     </div>
   </section>
@@ -141,8 +134,8 @@
       <div class="q">安装时提示「未知发布者 / 已保护你的电脑」？</div>
       <div class="a">安装包未做代码签名，Windows SmartScreen 会拦一下。点「更多信息」→「仍要运行」即可；文件由本页直接提供，未被第三方修改。</div>
 
-      <div class="q">安装版和免安装版怎么选？</div>
-      <div class="a">想固定在开始菜单、自动升级，选安装版；想放在 U 盘或不想写系统目录，选免安装版。两者数据互通，登录同一账号即同步。</div>
+      <div class="q">安装版和免安装版有什么区别？</div>
+      <div class="a">日常使用请装安装版。免安装版只随版本更新重新生成，供应用内自动更新使用，不单独放出来下载。</div>
 
       <div class="q">手机安装 APK 被拦截？</div>
       <div class="a">在系统设置里允许「安装未知来源应用」后重试。若已装旧版，直接覆盖安装即可，聊天记录保存在本机，不受影响。</div>
@@ -151,7 +144,7 @@
       <div class="a">不需要。本机账号记忆保存在本地，覆盖升级不会清除；换设备或清理应用数据后才需重新登录。</div>
 
       <div class="q">下载很慢或中途断开？</div>
-      <div class="a">本站文件由 GitHub Pages 托管，国内访问速度受线路影响。建议使用支持断点续传的下载工具；安装版与免安装版功能相同，任选其一即可，不必两个都下。</div>
+      <div class="a">本站文件由 GitHub Pages 托管，国内访问速度受线路影响。建议使用支持断点续传的下载工具，或右键「复制链接」交给 IDM、迅雷等续传。</div>
     </div>
   </section>
 

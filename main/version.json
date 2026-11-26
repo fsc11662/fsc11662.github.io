@@ -1,0 +1,13 @@
+{
+  "version": "1.7.4",
+  "date": "2026-11-17",
+  "note": "云端存储器客户端更新清单",
+  "exe": {
+    "url": "https://fsc11662.github.io/files/cloud_storage.exe",
+    "size": 69226821
+  },
+  "apk": {
+    "url": "https://fsc11662.github.io/files/cloud_storage.apk",
+    "size": 78294
+  }
+}
